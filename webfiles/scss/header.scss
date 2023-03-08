@@ -1,0 +1,38 @@
+$mainColor: #345765;
+
+header {
+    background: $mainColor;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    // margin: 0;
+    // padding: 0 2000px;
+    div {
+        background: $mainColor;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1400px;
+        width: 100%;
+        margin: 0 auto;
+        img {
+            width: 124px;
+            height: 80px;
+            margin: .625rem 0;
+            // margin-right: 37rem;
+        }
+    }
+    nav {
+        ul {
+            list-style: none;
+            display: flex;
+        }
+        a {
+            display: block;
+            text-decoration: none;
+            padding: 2.625rem 1.25rem;
+            color: #ffffff;
+        }
+    }
+}

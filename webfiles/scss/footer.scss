@@ -1,0 +1,101 @@
+$mainColor: #345765;
+$secondColor: #ffffff;
+$secondPolicy: "Montserrat-Regular", Verdana, Tahoma, sans-serif; 
+
+footer {
+    background: $mainColor;
+    color: $secondColor;
+    > div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        background: $mainColor;
+        max-width: 1400px;
+        width: 100%;
+        section {
+            margin: 3rem auto;
+            width: 40%;
+            h3:nth-of-type(1) {
+                margin-bottom: 2rem;
+            }
+        }
+        section:nth-of-type(1) {
+            margin-left: 9.0625rem;
+            h3:nth-of-type(2) {
+                margin-bottom: 1.125rem;
+                margin-right: 22.375rem;
+            }
+            a {
+                margin: 0;
+            }
+        }
+        section:nth-of-type(2) {
+            display: flex;
+            h3:nth-of-type(2) {
+                margin: 2.9375rem auto 1rem;
+            }
+            > a:nth-of-type(1) {
+                margin-left: 0;
+            }
+        }
+    }
+    address {
+        font-style: normal;
+        div:nth-of-type(2) {
+            margin: 1rem auto 2rem;
+        }
+    }
+    address:nth-of-type(2) {
+        display: flex;
+    }
+    a {
+        text-decoration: none;
+        color: $secondColor;
+        margin: 0 .5rem;
+    }
+    h3 {
+        font-family: $secondPolicy;
+        text-decoration: underline;
+    }
+    p {
+        margin-bottom: .5rem;
+    }
+    #icon4{
+        width: 21px;
+        height: 21px;
+        margin-right: 1rem;
+    }
+    #icon5 {
+        width: 24px;
+        height: 20px;
+        margin-right: .8125rem;
+    }
+    #icon6 {
+        width: 20px;
+        height: 20px;
+        margin-right: 1.0625rem;
+    }
+    .flexColumn {
+        display: flex;
+        flex-direction: column;
+    }
+    > div:nth-of-type(2) {
+        border-top: #ffffff solid 2px;
+    }
+    #firstInstance {
+        margin-left: 0;
+    }
+    .juridique {
+        margin-left: 0;
+    }
+    a.juridique:nth-of-type(1) {
+        margin-bottom: .625rem;
+    }
+    #footerLogos {
+        margin-right: 6.125rem;
+    }
+    #copyrights {
+        margin: 1.3125rem auto 1.1875rem;
+    }
+}
