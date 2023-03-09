@@ -1,5 +1,14 @@
+@keyframes animImg {
+  0% {
+    scale: 0;
+  }
+  100% {
+    scale: 1;
+  }
+}
 main {
   max-width: 1400px;
+  width: 90%;
   margin: 7rem auto 7.5rem;
 }
 main h1 {
@@ -20,6 +29,7 @@ main img {
   max-height: 565px;
   height: 100%;
   object-fit: cover;
+  animation: animImg 1s 1 ease-out;
 }
 main > div {
   margin-top: 7rem;
@@ -39,12 +49,19 @@ main address > div {
   display: flex;
   margin-top: 1.3125rem;
 }
+main address > div p {
+  max-width: 200px;
+  width: 100%;
+}
 main address > div:nth-of-type(2) {
   margin-top: 1.8125rem;
 }
 main address a {
   text-decoration: none;
   color: #34A58A;
+}
+main address a:hover {
+  color: #0b5140;
 }
 
 h2 {
@@ -87,6 +104,26 @@ h2:nth-of-type(2) {
   height: 553px;
   border: solid #ffffff 5px;
   border-radius: 10px;
+}
+
+@media screen and (max-width: 1050px) {
+  #map {
+    width: 274px;
+    height: 277px;
+  }
+}
+@media screen and (max-width: 790px) {
+  main h1 {
+    margin-bottom: 1rem;
+    margin-top: 11rem;
+  }
+  main > div {
+    flex-direction: column;
+    margin-top: 2rem;
+  }
+  main h2:nth-of-type(1) {
+    margin-top: 3rem;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

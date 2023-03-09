@@ -19,6 +19,9 @@ footer {
             h3:nth-of-type(1) {
                 margin-bottom: 2rem;
             }
+            a:hover {
+                color: #34A58A;
+            }
         }
         section:nth-of-type(1) {
             margin-left: 9.0625rem;
@@ -80,9 +83,6 @@ footer {
         display: flex;
         flex-direction: column;
     }
-    > div:nth-of-type(2) {
-        border-top: #ffffff solid 2px;
-    }
     #firstInstance {
         margin-left: 0;
     }
@@ -94,6 +94,10 @@ footer {
     }
     #footerLogos {
         margin-right: 6.125rem;
+    }
+    hr {
+        background: #ffffff;
+        height: 2px;
     }
     #copyrights {
         margin: 1.3125rem auto 1.1875rem;

@@ -1,4 +1,5 @@
 $mainColor: #345765;
+$white: #ffffff;
 
 header {
     background: $mainColor;
@@ -6,8 +7,9 @@ header {
     top: 0;
     z-index: 100;
     width: 100%;
-    // margin: 0;
-    // padding: 0 2000px;
+    #burger {
+        display: none;
+    }
     div {
         background: $mainColor;
         display: flex;
@@ -20,7 +22,6 @@ header {
             width: 124px;
             height: 80px;
             margin: .625rem 0;
-            // margin-right: 37rem;
         }
     }
     nav {
@@ -34,5 +35,38 @@ header {
             padding: 2.625rem 1.25rem;
             color: #ffffff;
         }
+        a:hover {
+            scale: 1.2;
+            border: #ffffff dotted 1px;
+        }
     }
+}
+@media screen and (max-width: 740px) {
+
+header {
+    nav{
+        display: none;
+    }
+    #burger {
+      display: block;
+      width: 30px;
+      height: 30px;
+      margin: 10px 40px;
+      background-color: transparent;
+      border: none;
+      border-top: 2px solid #C4C4C4;
+      border-bottom: 2px solid #C4C4C4;
+      position: relative;
+    }
+    #burger:after {
+      position: absolute;
+      top: 50%;
+      transform: translateX(-50%) translateY(-50%);
+      content: "";
+      height: 2px;
+      width: 30px;
+      background: #C4C4C4;
+    }
+    
+}   
 }
