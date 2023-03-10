@@ -29,6 +29,7 @@ header nav ul {
 header nav a {
   display: block;
   text-decoration: none;
+  font-size: 1.25rem;
   padding: 2.625rem 1.25rem;
   color: #ffffff;
 }
@@ -37,7 +38,7 @@ header nav a:hover {
   border: #ffffff dotted 1px;
 }
 
-@media screen and (max-width: 740px) {
+@media screen and (max-width: 840px) {
   header nav {
     display: none;
   }

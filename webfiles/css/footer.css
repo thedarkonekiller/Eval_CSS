@@ -4,8 +4,6 @@ footer {
 }
 footer > div {
   display: flex;
-  align-items: center;
-  justify-content: center;
   margin: 0 auto;
   background: #345765;
   max-width: 1400px;
@@ -13,7 +11,6 @@ footer > div {
 }
 footer > div section {
   margin: 3rem auto;
-  width: 40%;
 }
 footer > div section h3:nth-of-type(1) {
   margin-bottom: 2rem;
@@ -22,6 +19,7 @@ footer > div section a:hover {
   color: #34A58A;
 }
 footer > div section:nth-of-type(1) {
+  width: 40%;
   margin-left: 9.0625rem;
 }
 footer > div section:nth-of-type(1) h3:nth-of-type(2) {
@@ -33,6 +31,8 @@ footer > div section:nth-of-type(1) a {
 }
 footer > div section:nth-of-type(2) {
   display: flex;
+  justify-content: space-between;
+  width: 60%;
 }
 footer > div section:nth-of-type(2) h3:nth-of-type(2) {
   margin: 2.9375rem auto 1rem;
@@ -92,12 +92,44 @@ footer a.juridique:nth-of-type(1) {
 footer #footerLogos {
   margin-right: 6.125rem;
 }
+footer #footerLogos img {
+  display: block;
+}
+footer #footerLogos img:first-of-type {
+  width: 115px;
+  height: 115px;
+}
+footer #footerLogos img:last-of-type {
+  width: 115px;
+  height: 121px;
+}
 footer hr {
   background: #ffffff;
   height: 2px;
 }
 footer #copyrights {
   margin: 1.3125rem auto 1.1875rem;
+}
+
+@media screen and (max-width: 860px) {
+  footer > div {
+    flex-direction: column;
+    align-items: center;
+  }
+  footer > div section:nth-of-type(1), footer > div section:nth-of-type(2) {
+    max-width: 1400px;
+    width: 90%;
+  }
+  footer > div section:nth-of-type(1) {
+    margin: 3rem auto;
+  }
+  footer > div section:nth-of-type(2) {
+    margin-bottom: 2rem;
+    margin: 0 auto 2rem;
+  }
+  footer #copyrights {
+    text-align: center;
+  }
 }
 
 /*# sourceMappingURL=footer.css.map */
